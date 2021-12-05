@@ -1,0 +1,8 @@
+<svg id="svgwithidmill" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 100 100" height="100" width="100">
+	<g>
+		<path d="M 50 50 Q 100 0 50 -50 L -25 -25 Q 50 -25 50 50 Z"></path>
+		<path d="M 50 50 Q 100 100 150 50 L 125 -25 Q 125 50 50 50 Z"></path>
+		<path d="M 50 50 Q 0 100 50 150 L 125 125 Q 50 125 50 50 Z"></path>
+		<path d="M 50 50 Q 0 0 -50 50 L -25 125 Q -25 50 50 50 Z"></path>
+	</g>
+</svg>

@@ -1,0 +1,436 @@
+body {
+  min-height: 100vh;
+}
+button.box:disabled {
+  cursor: not-allowed !important;
+  opacity: 0.3;
+}
+#btnBox {
+  min-height: 70vh;
+  height: 100%;
+  width: 100%;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+input[type="color"] {
+  -webkit-appearance: none;
+  border: none;
+  border-radius: 0.3rem;
+  width: 100%;
+  height: 2.5rem;
+}
+input[type="color"]::-webkit-color-swatch-wrapper {
+  padding: 0;
+}
+input[type="color"]::-webkit-color-swatch {
+  border: none;
+}
+#fs_icon {
+  height: 1.5rem;
+}
+#box {
+  transition: 0.5s;
+}
+#btngroup {
+  min-width: 30vh;
+}
+.button {
+  transition: 0.2s;
+}
+#infBox {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+img {
+  max-width: 1000vw;
+}
+
+@keyframes sun-decrease-preview {
+  from {
+    transform: rotate(0deg) scale(1.1);
+  }
+  to {
+    transform: rotate(120deg) scale(0.01);
+  }
+}
+@keyframes sun-increase-preview {
+  from {
+    transform: rotate(0deg) scale(0.01);
+  }
+  to {
+    transform: rotate(180deg) scale(1.15);
+  }
+}
+.anim-sun-decrease-preview {
+  position: absolute;
+  animation: 5s infinite sun-decrease-preview;
+}
+.anim-sun-increase-preview {
+  position: absolute;
+  animation: 5s linear infinite sun-increase-preview;
+}
+
+@keyframes sun-decrease {
+  from {
+    transform: rotate(0deg) scale(1.1);
+  }
+  to {
+    transform: rotate(120deg) scale(0.001);
+  }
+}
+@keyframes sun-increase {
+  from {
+    transform: rotate(0deg) scale(0.001);
+  }
+  to {
+    transform: rotate(180deg) scale(1.15);
+  }
+}
+.anim-sun-decrease {
+  position: absolute;
+  animation: 5s infinite sun-decrease;
+}
+.anim-sun-increase {
+  position: absolute;
+  animation: 5s ease-in infinite sun-increase;
+}
+
+@keyframes circle-decrease-preview {
+  from {
+    transform: scale(0.7);
+  }
+  to {
+    transform: scale(0.001);
+  }
+}
+@keyframes circle-increase-preview {
+  from {
+    transform: scale(0.001);
+  }
+  to {
+    transform: scale(0.7);
+  }
+}
+.anim-circle-decrease-preview {
+  position: absolute;
+  animation: 8s infinite circle-decrease-preview;
+}
+.anim-circle-increase-preview {
+  position: absolute;
+  animation: 8s ease-in infinite circle-increase-preview;
+}
+
+@keyframes circle-decrease {
+  from {
+    transform: scale(0.9);
+  }
+  to {
+    transform: scale(0.001);
+  }
+}
+@keyframes circle-increase {
+  from {
+    transform: scale(0.001);
+  }
+  to {
+    transform: scale(1.3);
+  }
+}
+.anim-circle-decrease {
+  position: absolute;
+  animation: 8s infinite circle-decrease;
+}
+.anim-circle-increase {
+  position: absolute;
+  animation: 8s ease-in infinite circle-increase;
+}
+
+@keyframes square-decrease-preview {
+  from {
+    transform: scale(0.4) rotate(0deg);
+  }
+  to {
+    transform: scale(0.001) rotate(270deg);
+  }
+}
+@keyframes square-increase-preview {
+  from {
+    transform: scale(0.4) rotate(0deg);
+  }
+  to {
+    transform: scale(0.001) rotate(-270deg);
+  }
+}
+.anim-square-decrease-preview {
+  position: absolute;
+  animation: 8s infinite square-decrease-preview;
+}
+.anim-square-increase-preview {
+  position: absolute;
+  animation: 8s infinite square-increase-preview;
+}
+
+@keyframes square-decrease {
+  from {
+    transform: scale(1.1) rotate(0deg);
+  }
+  to {
+    transform: scale(0.001) rotate(270deg);
+  }
+}
+@keyframes square-increase {
+  from {
+    transform: scale(1.1) rotate(0deg);
+  }
+  to {
+    transform: scale(0.001) rotate(-270deg);
+  }
+}
+.anim-square-decrease {
+  position: absolute;
+  animation: 8s infinite square-decrease;
+}
+.anim-square-increase {
+  position: absolute;
+  animation: 8s infinite square-increase;
+}
+
+@keyframes romb-decrease-preview {
+  from {
+    transform: scale(0.6);
+  }
+  to {
+    transform: scale(0.01);
+  }
+}
+@keyframes romb-increase-preview {
+  from {
+    transform: scale(0.01);
+  }
+  to {
+    transform: scale(0.9);
+  }
+}
+.anim-romb-decrease-preview {
+  position: absolute;
+  animation: 8s infinite romb-decrease-preview;
+}
+.anim-romb-increase-preview {
+  position: absolute;
+  animation: 8s ease-in infinite romb-increase-preview;
+}
+
+@keyframes romb-decrease {
+  from {
+    transform: scale(1.5);
+  }
+  to {
+    transform: scale(0.001);
+  }
+}
+@keyframes romb-increase {
+  from {
+    transform: scale(0.001);
+  }
+  to {
+    transform: scale(1.5);
+  }
+}
+.anim-romb-decrease {
+  position: absolute;
+  animation: 6s infinite romb-decrease;
+}
+.anim-romb-increase {
+  position: absolute;
+  animation: 6s ease-in infinite romb-increase;
+}
+
+@keyframes cyl-decrease-preview {
+  from {
+    transform: scaleX(2.5) scaleY(1.7);
+  }
+  to {
+    transform: scaleX(0.01) scaleY(1.7);
+  }
+}
+@keyframes cyl-increase-preview {
+  from {
+    transform: scaleX(0.01) scaleY(1.7);
+  }
+  to {
+    transform: scaleX(2.5) scaleY(1.7);
+  }
+}
+.anim-cyl-decrease-preview {
+  position: absolute;
+  animation: 17s infinite cyl-decrease-preview;
+  transform: scale(2.7);
+}
+.anim-cyl-increase-preview {
+  position: absolute;
+  animation: 17s ease-in infinite cyl-increase-preview;
+  transform: scale(2.7);
+}
+
+@keyframes cyl-decrease {
+  from {
+    transform: scaleX(1.2) scaleY(1.3);
+  }
+  to {
+    transform: scaleX(0.001) scaleY(1.3);
+  }
+}
+@keyframes cyl-increase {
+  from {
+    transform: scaleX(0.001) scaleY(1.3);
+  }
+  to {
+    transform: scaleX(1.2) scaleY(1.3);
+  }
+}
+.anim-cyl-decrease {
+  position: absolute;
+  animation: 17s infinite cyl-decrease;
+}
+.anim-cyl-increase {
+  position: absolute;
+  animation: 17s ease-in infinite cyl-increase;
+}
+
+@keyframes mill-decrease-preview {
+  from {
+    transform: rotate(360deg) scale(1.3);
+  }
+  to {
+    transform: rotate(0deg) scale(1.3);
+  }
+}
+@keyframes mill-increase-preview {
+  from {
+    transform: rotate(0deg) scale(1.3);
+  }
+  to {
+    transform: rotate(360deg) scale(1.3);
+  }
+}
+.anim-mill-decrease-preview {
+  position: absolute;
+  animation: 5s linear infinite mill-decrease-preview;
+}
+.anim-mill-increase-preview {
+  position: absolute;
+  animation: 5s linear infinite mill-increase-preview;
+}
+@keyframes mill-decrease {
+  from {
+    transform: rotate(360deg) scale(0.5);
+  }
+  to {
+    transform: rotate(0deg) scale(0.5);
+  }
+}
+@keyframes mill-increase {
+  from {
+    transform: rotate(0deg) scale(0.5);
+  }
+  to {
+    transform: rotate(360deg) scale(0.5);
+  }
+}
+.anim-mill-decrease {
+  position: absolute;
+  animation: 6s linear infinite mill-decrease;
+}
+.anim-mill-increase {
+  position: absolute;
+  animation: 6s linear infinite mill-increase;
+}
+
+@keyframes rectangle-decrease-preview {
+  from {
+    transform: scale(1.6);
+  }
+  to {
+    transform: scale(0.001);
+  }
+}
+@keyframes rectangle-increase-preview {
+  from {
+    transform: scale(0.001);
+  }
+  to {
+    transform: scale(1.6);
+  }
+}
+.anim-rectangle-decrease-preview {
+  position: absolute;
+  animation: 8s infinite rectangle-decrease-preview;
+  transform: scale(1.6);
+}
+.anim-rectangle-increase-preview {
+  position: absolute;
+  animation: 8s ease-in infinite rectangle-increase-preview;
+  transform: scale(1.6);
+}
+
+@keyframes rectangle-decrease {
+  from {
+    transform: scale(1.2);
+  }
+  to {
+    transform: scale(0.001);
+  }
+}
+@keyframes rectangle-increase {
+  from {
+    transform: scale(0.001);
+  }
+  to {
+    transform: scale(1.2);
+  }
+}
+.anim-rectangle-decrease {
+  position: absolute;
+  animation: 8s infinite rectangle-decrease;
+  transform: scale(1.6);
+}
+.anim-rectangle-increase {
+  position: absolute;
+  animation: 8s ease-in infinite rectangle-increase;
+  transform: scale(1.6);
+}
+
+@keyframes spiral-l {
+  0% {
+    transform: rotateZ(360deg);
+  }
+  100% {
+    transform: rotateZ(0deg);
+  }
+}
+@keyframes spiral-r {
+  0% {
+    transform: rotateZ(0deg);
+  }
+  100% {
+    transform: rotateZ(360deg);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .lmodal {
+    width: 100vw;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+}
+@media screen and (min-width: 768px) {
+  .lmodal {
+    width: 70vw;
+  }
+}
+.anim-inf {
+  opacity: 0.6;
+}
