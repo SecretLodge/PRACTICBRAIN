@@ -15,7 +15,7 @@ app.listen(PORT, error => {
     error ? console.log(error) : console.log(`Listening PORT: ${PORT}`);
 });
 
-app.get('', (request, response) => {
+app.get('/trainings/arithmetic', (request, response) => {
     response.render(createPath('index'));
 });
 
