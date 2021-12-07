@@ -1,5 +1,4 @@
 const express = require('express');
-const crypto = require('crypto');
 const path = require('path');
 
 const createPath = (page) => path.resolve(__dirname, '', `${page}.pug`);
@@ -15,7 +14,7 @@ app.listen(PORT, error => {
     error ? console.log(error) : console.log(`Listening PORT: ${PORT}`);
 });
 
-app.get('/trainings/arithmetic', (request, response) => {
+app.get('/trainings/:arithmetic', (request, response) => {
     response.render(createPath('index'));
 });
 

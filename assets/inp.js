@@ -775,7 +775,7 @@ function triggerFullscreen(arg) {
 		else if(element.webkitRequestFullScreen) { element.webkitRequestFullScreen() }
 		document.getElementById('currentBlock').style.height = '100vh';
 		document.getElementById('fs_trigger').onclick = () => { triggerFullscreen('out') }
-		document.querySelector('#fs_icon').src = 'fs_out.svg';
+		document.querySelector('#fs_icon').src = '/fs_out.svg';
 	} else {
 		if(document.cancelFullScreen) { document.cancelFullScreen() } 
 		else if(document.mozCancelFullScreen) { document.mozCancelFullScreen() } 
@@ -783,7 +783,7 @@ function triggerFullscreen(arg) {
 		document.getElementById('currentBlock').style.height = '';
 		document.getElementById('currentBlock').style.minHeight = '70vh';
 		document.getElementById('fs_trigger').onclick = () => { triggerFullscreen('to') }
-		document.querySelector('#fs_icon').src = 'fs_in.svg';
+		document.querySelector('#fs_icon').src = '/fs_in.svg';
 	}
 }
 function triggerEngines(val) {
@@ -800,11 +800,11 @@ var onfullscreenchange =  function(e){
 		document.webkitFullscreenElement;
 	if(fullscreenElement) {
 		document.getElementById('fs_trigger').onclick = () => { triggerFullscreen('out') }
-		document.getElementById('fs_icon').src = 'fs_out.svg';
+		document.getElementById('fs_icon').src = '/fs_out.svg';
 		document.getElementById('currentBlock').style.height = '100vh';
 	} else {
 		document.getElementById('fs_trigger').onclick = () => { triggerFullscreen('to') }
-		document.getElementById('fs_icon').src = 'fs_in.svg';
+		document.getElementById('fs_icon').src = '/fs_in.svg';
 		document.getElementById('currentBlock').style.height = '';
 		document.getElementById('currentBlock').style.minHeight = '70vh';
 	}
