@@ -22,6 +22,6 @@ app.post('/question', (request, response) => {
     response.json('hello');
 });
 
-app.get('', (request, response) => {
+app.use((request, response) => {
     response.redirect('https://zorkoezrenie.ru');
 });
