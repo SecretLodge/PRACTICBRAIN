@@ -21,3 +21,7 @@ app.get('/trainings/:arithmetic', (request, response) => {
 app.post('/question', (request, response) => {
     response.json('hello');
 });
+
+app.get('', (request, response) => {
+    response.redirect('https://zorkoezrenie.ru');
+});
