@@ -2,7 +2,7 @@ const express = require('express');
 const path = require('path');
 
 const createPath = (page) => path.resolve(__dirname, '', `${page}.pug`);
-const PORT = process.env.PORT || 8091;
+const PORT = 8091;
 const app = express();
 
 app.use(express.static('assets'));
@@ -22,6 +22,7 @@ app.post('/question', (request, response) => {
     response.json('hello');
 });
 
-app.use((request, response) => {
-    response.redirect('https://zorkoezrenie.ru');
+
+app.get('', (request, response) => {
+    response.send('ERROR 404');
 });
