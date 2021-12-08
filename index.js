@@ -2,7 +2,7 @@ const express = require('express');
 const path = require('path');
 
 const createPath = (page) => path.resolve(__dirname, '', `${page}.pug`);
-const PORT = process.env.PORT || 22;
+const PORT = process.env.PORT || 4000;
 const app = express();
 
 app.use(express.static('assets'));
